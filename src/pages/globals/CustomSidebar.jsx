@@ -34,7 +34,8 @@ const [selected, setSelected] = useState("Dashboard");
 
 const CustomItem = ({ title, to, icon, selected, setSelected }) => {
   return (
-    <MenuItem
+    <Link to ={to}>
+      <MenuItem
       active={selected === title}
       style={{
         color: colors.grey[100],
@@ -43,8 +44,8 @@ const CustomItem = ({ title, to, icon, selected, setSelected }) => {
       icon={icon}
     >
       <Typography sx={{fontSize:22, color:"#fff"}}>{title}</Typography>
-      <Link to={to} />
     </MenuItem>
+    </Link>
   );
 };
 

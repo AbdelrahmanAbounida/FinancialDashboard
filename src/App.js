@@ -3,7 +3,7 @@ import { useMode, ColorModeContext } from './assets/theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Navbar, CustomSidebar } from './pages/globals';
 import { Routes,Route } from 'react-router-dom';
-import {Default, Home, Profile,Calender,Excel} from './pages'
+import {Default, Home, Profile,Excel} from './pages'
 import { ProSidebarProvider } from 'react-pro-sidebar';
 import {Box} from '@mui/material';
 function App() {
@@ -25,7 +25,6 @@ function App() {
                               <Routes>
                                   <Route path="/" element={<Home />} />
                                   <Route path="/default" element={<Default />}/>
-                                  <Route path="/calender" element={<Calender />}/>
                                   <Route path="/excel" element={<Excel />}/>
                                   <Route path="/profile" element={<Profile />}/>
                                   <Route path="/logout" element={<Home />}/>
